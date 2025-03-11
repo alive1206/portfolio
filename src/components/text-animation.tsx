@@ -11,7 +11,7 @@ export const TextAnimation = () => {
   useEffect(() => {
     const controls = animate(count, text.length, {
       type: 'tween',
-      duration: 1,
+      duration: 3,
       ease: 'easeInOut',
     })
     return controls.stop

@@ -10,7 +10,7 @@ type Props = {
 
 export const RenderModel: React.FC<Props> = ({ children, className }) => {
   return (
-    <Canvas className={clsx('relative z-10 h-screen w-screen', className)}>
+    <Canvas className={clsx('relative z-20 h-screen w-screen', className)}>
       <Suspense fallback={null}>{children}</Suspense>
       <Environment preset="forest" />
     </Canvas>
