@@ -6,20 +6,25 @@ import { classNames, navigationList } from '@/utils'
 import { map } from 'lodash'
 import { Dock, DockIcon } from '../magicui/dock'
 
-export function Navbar() {
+type Props = {
+  index: number
+  setCurrentSection: (index: number) => void
+}
+
+export const Navbar: React.FC<Props> = ({ index, setCurrentSection }) => {
   return (
-    <div className="fixed bottom-10 z-50 flex flex-col items-center justify-center">
+    <div className="fixed bottom-10 left-1/2 z-50 -translate-x-1/2">
       <TooltipProvider>
         <Dock direction="middle">
           {map(navigationList, (i) => (
-            <DockIcon key={i.title}>
+            <DockIcon key={i.index} onClick={() => setCurrentSection(i.index)}>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <div
                     aria-label={i.title}
-                    className={classNames(buttonVariants({ variant: 'ghost', size: 'icon' }), 'size-12 rounded-full px-4')}
+                    className={classNames(buttonVariants({ variant: 'ghost', size: 'icon' }), `size-12 rounded-full px-4`)}
                   >
-                    {i.icon}
+                    <span className={`${index === i.index && 'text-pink-300'}`}>{i.icon}</span>
                   </div>
                 </TooltipTrigger>
                 <TooltipContent>

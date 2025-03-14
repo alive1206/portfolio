@@ -3,5 +3,9 @@ type Props = {
 }
 
 export const LayoutMain: React.FC<Props> = ({ children }) => {
-  return <main className="relative flex min-h-screen flex-col items-center justify-between bg-[#141414]">{children}</main>
+  return (
+    <main className="perspective-[1000px] fixed left-0 top-0 h-full w-full overflow-x-hidden bg-[#141414] text-white">
+      {children}
+    </main>
+  )
 }
