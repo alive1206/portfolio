@@ -1,4 +1,5 @@
 import { FlatCompat } from '@eslint/eslintrc'
+import reactHooks from 'eslint-plugin-react-hooks'
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -10,14 +11,14 @@ const compat = new FlatCompat({
 })
 
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript', 'eslint:recommended', 'plugin:react-hooks/recommended'),
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    plugins: { 'react-hooks': reactHooks },
     rules: {
-      'react/react-in-jsx-scope': 'off',
-      'react/prop-types': 'off',
-      '@typescript-eslint/no-empty-object-type': 'off',
-      '@typescript-eslint/no-explicit-any': 'off',
       '@next/next/no-img-element': 'off',
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
     },
   },
 ]

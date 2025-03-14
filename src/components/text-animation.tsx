@@ -15,11 +15,11 @@ export const TextAnimation = () => {
       ease: 'easeInOut',
     })
     return controls.stop
-  }, [])
+  }, [count])
 
   return (
     <span>
-      <motion.span>{displayText}</motion.span>
+      <motion.span className="uppercase">{displayText}</motion.span>
       <CursorBlinker />
     </span>
   )
