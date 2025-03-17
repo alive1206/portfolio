@@ -1,3 +1,4 @@
+export * from './animation'
 export * from './models'
 export * from './navbar'
 export * from './render-model'
