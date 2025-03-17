@@ -88,7 +88,7 @@ export const Home = () => {
         )}
       >
         {map(sectionList, (section) => (
-          <div key={section.label} className="absolute top-20 w-screen text-center">
+          <div key={section.label} className="absolute top-20 w-screen">
             {section.component}
           </div>
         ))}

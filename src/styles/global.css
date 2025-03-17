@@ -12,6 +12,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.scroll-tips {
+  animation: scroll-for-more 1.5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes scroll-for-more {
+  0% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(10px);
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

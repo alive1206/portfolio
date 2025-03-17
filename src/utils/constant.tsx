@@ -22,3 +22,5 @@ export const navigationList = [
     icon: <Phone />,
   },
 ]
+
+export const projectList = {}
