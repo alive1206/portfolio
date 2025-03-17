@@ -1,3 +1,4 @@
+
 import { ScaleDiv } from '@/components'
 
 export const AboutSection = () => {
@@ -35,7 +36,7 @@ export const AboutSection = () => {
             alt=""
             src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,tailwind,bootstrap,ts,git,github,gitlab,vscode,mysql,mongodb"
           />
-        </ScaleDiv>
+        </ScaleDiv>  
       </div>
     </div>
   )
