@@ -1,4 +1,5 @@
 import { TextAnimation } from '@/components'
+import { classNames } from '@/utils'
 
 export const WelcomeSection = () => {
   return (
@@ -7,7 +8,7 @@ export const WelcomeSection = () => {
         <div className="text-6xl">
           <TextAnimation />
         </div>
-        <div className="relative flex h-14 w-6 rounded-3xl border p-4">
+        <div className={classNames('relative flex h-14 w-6 rounded-3xl border p-4 max-lg:rotate-90')}>
           <div className="scroll-tips absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-white"></div>
         </div>
       </div>
