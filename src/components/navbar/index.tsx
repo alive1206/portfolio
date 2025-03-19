@@ -13,7 +13,7 @@ type Props = {
 
 export const Navbar: React.FC<Props> = ({ index, setCurrentSection }) => {
   return (
-    <div className="fixed bottom-10 left-1/2 z-50 -translate-x-1/2">
+    <div className={classNames('fixed bottom-10 left-1/2 z-50 -translate-x-1/2 max-lg:bottom-5')}>
       <TooltipProvider>
         <Dock direction="middle">
           {map(navigationList, (i) => (
