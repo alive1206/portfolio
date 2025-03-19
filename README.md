@@ -1,6 +1,6 @@
-## Mini Fighter
+## Portfolio
 
-Single page porfolio
+Single page portfolio
 
 ## Installation
 
