@@ -1,9 +1,11 @@
 ## Portfolio
-
 Single page portfolio
 
-## Installation
+## 3D Model
+Chess Pawn
+credit: sylvernaut [Link](https://sketchfab.com/3d-models/chess-pawn-2b61573abd0a4599999e1ca0dffc4785#download)
 
+## Installation
 1. Clone this repository
 
 ```bash
@@ -23,5 +25,4 @@ pnpm dev
 ```
 
 ## Demo
-
 [Live Demo](https://tportfolio-3d.vercel.app/)
